@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Inisialisasi Project Angular dengan Angular-CLI</title><meta name="description" content="Angular-CLI merupakan skeleton generator untuk project Angular, dengan bantuan Angular-CLI kita tidak perlu lagi setup banyak kebutuhan…"><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Inisialisasi Project Angular dengan Angular-CLI</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Angular-CLI merupakan skeleton generator untuk project Angular, dengan bantuan Angular-CLI kita tidak perlu lagi setup banyak kebutuhan…
+</section>
+<section data-field="body" class="e-content">
+<section name="1dc8" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="76de" id="76de" class="graf graf--h3 graf--leading graf--title">Inisialisasi Project Angular dengan Angular-CLI</h3><figure name="7841" id="7841" class="graf graf--figure graf-after--h3"><div class="aspectRatioPlaceholder is-locked" style="max-width: 700px; max-height: 266px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 38%;"></div><img class="graf-image" data-image-id="1*CJLk6ZFqSCi07qOJ-BYYNQ.jpeg" data-width="800" data-height="304" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*CJLk6ZFqSCi07qOJ-BYYNQ.jpeg"></div><figcaption class="imageCaption">Angular Indonesia : Inisialisasi Project</figcaption></figure><p name="f5ff" id="f5ff" class="graf graf--p graf--hasDropCapModel graf--hasDropCap graf-after--figure"><span class="graf-dropCap">A</span><strong class="markup--strong markup--p-strong">ngular-CLI </strong>merupakan <em class="markup--em markup--p-em">skeleton generator</em> untuk project Angular, dengan bantuan <a href="https://github.com/angular/angular-cli" data-href="https://github.com/angular/angular-cli" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Angular-CLI</a> kita tidak perlu lagi setup banyak kebutuhan dasar seperti susuna folder, cara run, cara build dan lain-lain. Kesemuanya itu telah dibuatkan perintah (<em class="markup--em markup--p-em">command</em>)<em class="markup--em markup--p-em"> </em>melalui Angular-CLI. Seperti halnya Ember.js yang mempunyai Ember-CLI, Vuejs dengan Vue-CLI dan React dengan create-react-app maka seperti itu pula fungsi Angular-CLI bagi Angular.</p><p name="cf1e" id="cf1e" class="graf graf--p graf-after--p">Pada saat artikel ini ditulis Angular-CLI sudah mencapai versi stable yakni 1.0.4, Anda bisa lihat release history lebih lengkapnya <a href="https://github.com/angular/angular-cli/releases" data-href="https://github.com/angular/angular-cli/releases" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">disini</a>. Dengan sudah mencapai versi stable artinya Angular-CLI juga sudah siap untuk dipakai di production atau project dengan skala yang lebih besar dan kompleks. Secara fitur sudah dikatakan mumpuni dan memenuhi kebutuhan para developer namun juga akan tetep ada perbaikan dan penyesuaian secara berkala yang biasanya tidak akan breaking versi yang lebih lama.</p><p name="0e13" id="0e13" class="graf graf--p graf-after--p">Berikut adalah perintah sederhana untuk inisialisasi project Angular menggunakan Angular-CLI :</p><ol class="postList"><li name="0706" id="0706" class="graf graf--li graf-after--p">Pastikan kamu sudah memasang nodejs ya, kalau belum bisa download <a href="https://nodejs.org/en/download/" data-href="https://nodejs.org/en/download/" class="markup--anchor markup--li-anchor" rel="noopener" target="_blank">disini</a></li><li name="ea4e" id="ea4e" class="graf graf--li graf-after--li">Pasang Angular-CLi di global dengan cara :</li></ol><pre name="bcdb" id="bcdb" class="graf graf--pre graf-after--li">npm install -g @angular/cli</pre><p name="0c9a" id="0c9a" class="graf graf--p graf-after--pre">3. Buat project baru dengan cara :</p><pre name="bb43" id="bb43" class="graf graf--pre graf-after--p">ng new PROJECT_NAME</pre><p name="8a6a" id="8a6a" class="graf graf--p graf-after--pre">4. Setelah menjalankan <em class="markup--em markup--p-em">command </em>ini, Angular-CLI akan men-<em class="markup--em markup--p-em">generate </em>folder struktur yang dibutuhkan oleh kita, juga meng-<em class="markup--em markup--p-em">install </em>semua <em class="markup--em markup--p-em">depedency </em>yang dibutuhkan. Proses ini akan memakan waktu yang lumayan lama tergantung dari kondisi internet Anda.</p><p name="e62b" id="e62b" class="graf graf--p graf-after--p">5. Setelah semua proses di no.4 selesai, kita bisa menjalankan project pertama kita. Pastikan bahwa Anda berada di dalam folder project ketika menjalankan project.</p><pre name="b846" id="b846" class="graf graf--pre graf-after--p">// untuk pidah ke folder project<br>cd PROJECT_NAME</pre><pre name="2108" id="2108" class="graf graf--pre graf-after--pre">// untuk menjalankan project<br>ng serve</pre><p name="eec9" id="eec9" class="graf graf--p graf-after--pre">6. Dan pekerjaan kita sudah selesai. <br>Kita bisa membuka project ini di alamat <a href="http://localhost:4200/" data-href="http://localhost:4200/" class="markup--anchor markup--p-anchor" target="_blank">http://localhost:4200/</a>, dan akan melakukan hot reload ketika terjadi perubahan dalam file-file project kita.</p><p name="82ce" id="82ce" class="graf graf--p graf-after--p">Selain untuk meng-inisialisai project awal, Angular-CLI juga bisa digunakan untuk membuat berbagai macam file di Angular seperti component, directive, pipe, service, class, guard, enum dan module.</p><p name="08c5" id="08c5" class="graf graf--p graf-after--p">Fitur lebih lengkap bisa dibaca di github repository mereka <a href="https://github.com/angular/angular-cli" data-href="https://github.com/angular/angular-cli" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">disini</a>.<br>Saya juga sebelumnya sudah pernah menulis tentang hal ini di blog pribadi saya <a href="https://mazipanneh.com/blog/2017/05/belajar-angular-bagian-1-pengenalan-dan-inisialisasi-project/" data-href="https://mazipanneh.com/blog/2017/05/belajar-angular-bagian-1-pengenalan-dan-inisialisasi-project/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">disini</a>:</p><div name="c929" id="c929" class="graf graf--mixtapeEmbed graf-after--p graf--trailing"><a href="https://mazipanneh.com/blog/2017/05/belajar-angular-bagian-1-pengenalan-dan-inisialisasi-project/" data-href="https://mazipanneh.com/blog/2017/05/belajar-angular-bagian-1-pengenalan-dan-inisialisasi-project/" class="markup--anchor markup--mixtapeEmbed-anchor" title="https://mazipanneh.com/blog/2017/05/belajar-angular-bagian-1-pengenalan-dan-inisialisasi-project/"><strong class="markup--strong markup--mixtapeEmbed-strong">Belajar Angular - Bagian 1 - Pengenalan dan Inisialisasi Project | Irfan Maulana</strong><br><em class="markup--em markup--mixtapeEmbed-em">Belajar Angular - Bagian 1 - Pengenalan dan Inisialisasi Project - Angular merupakan versi upgrade dari AngularJS yang…</em>mazipanneh.com</a><a href="https://mazipanneh.com/blog/2017/05/belajar-angular-bagian-1-pengenalan-dan-inisialisasi-project/" class="js-mixtapeImage mixtapeImage u-ignoreBlock" data-media-id="6e8436d8309c7a51d16c83cc91b013ca" data-thumbnail-img-id="0*HK-pGQtsWS5UEJJZ." style="background-image: url(https://cdn-images-1.medium.com/fit/c/160/160/0*HK-pGQtsWS5UEJJZ.);"></a></div></div></div></section><section name="a833" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="2ab6" id="2ab6" class="graf graf--p graf--leading">Jangan lupa untuk join <strong class="markup--strong markup--p-strong">Angular Indonesia</strong> di channel berikut :</p><ul class="postList"><li name="d0e2" id="d0e2" class="graf graf--li graf-after--p"><strong class="markup--strong markup--li-strong">Facebook </strong>: <a href="https://m.facebook.com/groups/462764390497214" data-href="https://m.facebook.com/groups/462764390497214" class="markup--anchor markup--li-anchor" rel="nofollow noopener noopener" target="_blank">https://m.facebook.com/groups/462764390497214</a></li><li name="0b4d" id="0b4d" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Github </strong>: <a href="https://github.com/angular-indonesia" data-href="https://github.com/angular-indonesia" class="markup--anchor markup--li-anchor" rel="nofollow noopener noopener" target="_blank">https://github.com/angular-indonesia</a></li><li name="d1f6" id="d1f6" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Telegram </strong>: <a href="https://t.me/AngularID" data-href="https://t.me/AngularID" class="markup--anchor markup--li-anchor" rel="nofollow noopener noopener" target="_blank">https://t.me/AngularID</a></li><li name="b513" id="b513" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Medium </strong>: <a href="https://medium.com/angularid" data-href="https://medium.com/angularid" class="markup--anchor markup--li-anchor" rel="nofollow" target="_blank">https://medium.com/angularid</a></li><li name="abd2" id="abd2" class="graf graf--li graf-after--li"><strong class="markup--strong markup--li-strong">Blog </strong>: <a href="https://angular-indonesia.github.io/blogs" data-href="https://angular-indonesia.github.io/blogs" class="markup--anchor markup--li-anchor" rel="nofollow noopener noopener" target="_blank">https://angular-indonesia.github.io/blogs</a></li></ul><p name="e18a" id="e18a" class="graf graf--p graf-after--li">Semoga bermanfaat.</p><p name="5a51" id="5a51" class="graf graf--p graf-after--p">Terima kasih,</p><blockquote name="0935" id="0935" class="graf graf--blockquote graf-after--p graf--trailing">Ditulis oleh <a href="https://medium.com/u/d09eac079a9c" data-href="https://medium.com/u/d09eac079a9c" data-anchor-type="2" data-user-id="d09eac079a9c" data-action-value="d09eac079a9c" data-action="show-user-card" data-action-type="hover" class="markup--user markup--blockquote-user" target="_blank">Irfan Maulana</a></blockquote></div></div></section>
+</section>
+<footer><p class="p-tags">Tagged in <a href="https://medium.com/tag/angular-cli" class="p-tag">Angular Cli</a>, <a href="https://medium.com/tag/angular" class="p-tag">Angular</a>, <a href="https://medium.com/tag/angularjs2" class="p-tag">Angularjs2</a>, <a href="https://medium.com/tag/angular2" class="p-tag">Angular2</a>, <a href="https://medium.com/tag/angularid" class="p-tag">Angularid</a></p><p>By <a href="https://medium.com/@mazipanneh" class="p-author h-card">Irfan Maulana</a> on <a href="https://medium.com/p/1061c9b0023c"><time class="dt-published" datetime="2017-05-24T02:51:26.298Z">May 24, 2017</time></a>.</p><p><a href="https://medium.com/@mazipanneh/inisialisasi-project-angular-dengan-angular-cli-1061c9b0023c" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 8, 2018.</p></footer></article>
+
+</body></html>

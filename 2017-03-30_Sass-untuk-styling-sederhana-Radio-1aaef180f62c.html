@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Sass untuk styling sederhana Radio</title><meta name="description" content="Pernahkan Anda melihat komponen input dengan tipe Radio standard yang di sajikan oleh HTML ? Betapa tidak enaknya dipandang mata bukan …"><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Sass untuk styling sederhana Radio</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Pernahkan Anda melihat komponen input dengan tipe Radio standard yang di sajikan oleh HTML ? Betapa tidak enaknya dipandang mata bukan …
+</section>
+<section data-field="body" class="e-content">
+<section name="cd9a" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="329b" id="329b" class="graf graf--h3 graf--leading graf--title">Sass untuk styling sederhana Radio</h3><p name="7ed2" id="7ed2" class="graf graf--p graf-after--h3">Pernahkan Anda melihat komponen input dengan tipe Radio standard yang di sajikan oleh HTML ? Betapa tidak enaknya dipandang mata bukan ? Maka sekarang kita akan coba memberikan sentuhan sederhana kita agar tampilan input dengan tipe Radio ini lebih nyaman untuk dilihat mata.</p><p name="e7e0" id="e7e0" class="graf graf--p graf-after--p">Pertama, kita akan coba buat elemen HTML radio kita dan coba saja kita lihat apa yang ditampilkan oleh browser kita apabila tidak ada satupun style yang berada disana, berikut potongan kode HTML nya :</p><figure name="5375" id="5375" class="graf graf--figure graf--iframe graf-after--p"><script src="https://gist.github.com/mazipan/064088c71371de3ed8e7150e611b0b1b.js"></script></figure><p name="fe8e" id="fe8e" class="graf graf--p graf-after--figure">Dengan kode tersebut, akan menghasilkan tampilan seperti berikut :</p><figure name="d51a" id="d51a" class="graf graf--figure graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 191px; max-height: 24px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 12.6%;"></div><img class="graf-image" data-image-id="1*uyIFVh7aFFk0WHsg8nXEbA.png" data-width="191" data-height="24" src="https://cdn-images-1.medium.com/max/800/1*uyIFVh7aFFk0WHsg8nXEbA.png"></div><figcaption class="imageCaption">ohhh, apa ini ???</figcaption></figure><p name="bd50" id="bd50" class="graf graf--p graf-after--figure">Bila Anda kesulitan memahami kode HTML tersebut Anda mungkin perlu membaca tulisan ini dahulu <a href="https://mazipanneh.com/blog/2017/03/perjalanan-menjadi-frontend-developer-bagi-pemula-seri-1-mengenal-html/" data-href="https://mazipanneh.com/blog/2017/03/perjalanan-menjadi-frontend-developer-bagi-pemula-seri-1-mengenal-html/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Perjalanan Menjadi Frontend Developer Bagi Pemula – Seri 1 – Mengenal HTML</a>.</p><p name="e49c" id="e49c" class="graf graf--p graf-after--p">Untuk memberikan sentuhan baru pada komponen ini, maka kita perlu menambahkan beberapa rule CSS kepada potongan kode HTML tersebut. Namun karena kita kan banyak mengulang kata-kata class utama yang akan kita beri style jadi saya memilih menggunakan pre-processor SASS agar membantu memudahkan dalam menulis style tersebut.</p><p name="f8ca" id="f8ca" class="graf graf--p graf-after--p">Langsung saja, saya telah membuat gist untuk kode SASS yang akan memberikan style pada elemen HTML kita diatas. Silahkan dibaca, dipelajari dan dimodifikasi seenak Anda sesuai dengan kebutuhan masing-masing.</p><p name="e206" id="e206" class="graf graf--p graf-after--p">Anda bisa temui kodenya seperti berikut :</p><figure name="fc0e" id="fc0e" class="graf graf--figure graf--iframe graf-after--p"><script src="https://gist.github.com/mazipan/b13a1add0b1983c6357092e360ed8f5f.js"></script></figure><p name="d2eb" id="d2eb" class="graf graf--p graf-after--figure">Tampilan dari kode diatas akan menghasilkan tampilan yang kurang lebih seperti gambar berikut :</p><figure name="41af" id="41af" class="graf graf--figure graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 275px; max-height: 32px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 11.600000000000001%;"></div><img class="graf-image" data-image-id="1*RMQD11Vh2eqfTe3hP94gUw.png" data-width="275" data-height="32" src="https://cdn-images-1.medium.com/max/800/1*RMQD11Vh2eqfTe3hP94gUw.png"></div><figcaption class="imageCaption">hmmm, sepertinya ini lebih baik</figcaption></figure><p name="bd25" id="bd25" class="graf graf--p graf-after--figure">Pada intinya kita memanipulasi <em class="markup--em markup--p-em">pseudo element</em> <strong class="markup--strong markup--p-strong">:before</strong> dan <strong class="markup--strong markup--p-strong">:after</strong> dari label input Radio tersebut dan menggantinya dengan border solid 1px yang ditambah border-radius 50% agar menjadi lingkaran, kita juga menambahkan state di <em class="markup--em markup--p-em">pseudo class</em> <strong class="markup--strong markup--p-strong">:checked</strong> untuk membedakan ketika radio tersebut sedang dalam keadaan terpilih dan tidak.</p><p name="5a2a" id="5a2a" class="graf graf--p graf-after--p">Selamat belajar ya, bila Anda pemula dan susah memahami beberapa istilah CSS yang saya sebutkan diatas Anda mungkin perlu membaca tulisan ini terlebih dahulu <a href="https://mazipanneh.com/blog/2017/03/perjalanan-menjadi-frontend-developer-bagi-pemula-seri-2-mengenal-css/" data-href="https://mazipanneh.com/blog/2017/03/perjalanan-menjadi-frontend-developer-bagi-pemula-seri-2-mengenal-css/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Perjalanan Menjadi Frontend Developer Bagi Pemula – Seri 2 – Mengenal CSS</a>.</p><p name="2139" id="2139" class="graf graf--p graf-after--p">Anda juga bisa melihat live preview hasil dari kode tersebut <a href="https://codepen.io/mazipan/pen/ryQZON" data-href="https://codepen.io/mazipan/pen/ryQZON" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">disini</a>.</p><p name="29a9" id="29a9" class="graf graf--p graf-after--p">Tulisan ini telah dipublish juga di blog saya <a href="https://mazipanneh.com/blog/2017/03/memberi-style-css-sederhana-pada-radio-button/" data-href="https://mazipanneh.com/blog/2017/03/memberi-style-css-sederhana-pada-radio-button/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">disini</a>.</p><p name="dc67" id="dc67" class="graf graf--p graf-after--p">Terima kasih,</p><blockquote name="9979" id="9979" class="graf graf--blockquote graf-after--p graf--trailing">Ditulis sesaat sebelum pulang kerja oleh <a href="https://medium.com/u/d09eac079a9c" data-href="https://medium.com/u/d09eac079a9c" data-anchor-type="2" data-user-id="d09eac079a9c" data-action-value="d09eac079a9c" data-action="show-user-card" data-action-type="hover" class="markup--user markup--blockquote-user" target="_blank">Irfan Maulana</a></blockquote></div></div></section>
+</section>
+<footer><p class="p-tags">Tagged in <a href="https://medium.com/tag/css" class="p-tag">CSS</a>, <a href="https://medium.com/tag/sass" class="p-tag">Sass</a>, <a href="https://medium.com/tag/programming" class="p-tag">Programming</a>, <a href="https://medium.com/tag/web-development" class="p-tag">Web Development</a>, <a href="https://medium.com/tag/bahasa-indonesia" class="p-tag">Bahasa Indonesia</a></p><p>By <a href="https://medium.com/@mazipanneh" class="p-author h-card">Irfan Maulana</a> on <a href="https://medium.com/p/1aaef180f62c"><time class="dt-published" datetime="2017-03-30T11:54:18.222Z">March 30, 2017</time></a>.</p><p><a href="https://medium.com/@mazipanneh/sass-untuk-styling-sederhana-radio-1aaef180f62c" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 8, 2018.</p></footer></article>
+
+</body></html>

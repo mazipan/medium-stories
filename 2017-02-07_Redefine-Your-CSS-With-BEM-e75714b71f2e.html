@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Redefine Your CSS With BEM</title><meta name="description" content="Do you ever feel confused when code CSS in a team ? Do you ever ask a general questions like, Who’s make this class name ? Who’s change my…"><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Redefine Your CSS With BEM</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Do you ever feel confused when code CSS in a team ? Do you ever ask a general questions like, Who’s make this class name ? Who’s change my…
+</section>
+<section data-field="body" class="e-content">
+<section name="1b3e" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="698e" id="698e" class="graf graf--h3 graf--leading graf--title">Redefine Your CSS With BEM</h3><figure name="8cf6" id="8cf6" class="graf graf--figure graf-after--h3"><div class="aspectRatioPlaceholder is-locked" style="max-width: 700px; max-height: 373px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 53.300000000000004%;"></div><img class="graf-image" data-image-id="1*Ld13DR5Eq54tnQsvY8W2_Q.jpeg" data-width="800" data-height="426" data-is-featured="true" src="https://cdn-images-1.medium.com/max/800/1*Ld13DR5Eq54tnQsvY8W2_Q.jpeg"></div><figcaption class="imageCaption">Image Source : <a href="http://www.skilledup.com/articles/25-css-interview-questions-answers" data-href="http://www.skilledup.com/articles/25-css-interview-questions-answers" class="markup--anchor markup--figure-anchor" rel="nofollow noopener noopener" target="_blank">http://www.skilledup.com/articles/25-css-interview-questions-answers</a></figcaption></figure><p name="86d2" id="86d2" class="graf graf--p graf-after--figure">Do you ever feel confused when code CSS in a team ? Do you ever ask a general questions like, Who’s make this class name ? Who’s change my class that I defined ? Why you override my class with your <em class="markup--em markup--p-em">!important</em> thing ? What is for this class name created ? Who’s using this class name ? And many more confusing questions, but it’s fact. Almost all CSS developer that working in team has those questions.</p><p name="5534" id="5534" class="graf graf--p graf-after--p">CSS have many ambiguous, CSS have no clear definition by its default about how to write it. We have too many freedom in CSS about file name, classname, selector usage and almost everything. I have seen file CSS that named with <em class="markup--em markup--p-em">style.css</em> and inside it there is so many line of code that never known who’s using all of that code.</p><p name="7526" id="7526" class="graf graf--p graf-after--p">I used to code <em class="markup--em markup--p-em">Java Programming</em> too, so I used to code everything with clear standard, Java has good rule even in filename. I think we as CSS developer should upgrade our habit to be more strict and follow some <em class="markup--em markup--p-em">Rules/Standards/Conventions</em> to achieve better code collaboration.</p><p name="9b2c" id="9b2c" class="graf graf--p graf-after--p graf--trailing">And for all of this problem, I try to implement one of proven convention that available in market. BEM (http://getbem.com).</p></div></div></section><section name="675f" class="section section--body"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="a46c" id="a46c" class="graf graf--h3 graf--leading">BEM Convention</h3><p name="7275" id="7275" class="graf graf--p graf-after--h3">BEM stands for Block-Element-Modifier. BEM is convention for class naming in your CSS code. It’s very simple definition because BEM (*like it’s name) is just separate it’s rule into three, Block, Element and Modifier. BEM will help you to organize your CSS to answer all ambiguous that asking by our questions first above. If BEM is just class naming convention, how BEM will help us ? to answer this question let’s understand how BEM works in your code.</p><p name="b21a" id="b21a" class="graf graf--p graf-after--p graf--trailing">Let’s start with understand one by one BEM’s rule.</p></div></div></section><section name="cce4" class="section section--body"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="a263" id="a263" class="graf graf--h3 graf--leading">— Block</h3><p name="027e" id="027e" class="graf graf--p graf-after--h3">Block is every block parent that can stand independent, have no dependent with any other block. Block has no rule for its writing, just like ordinary class name. But lets add more rule so we have no ambiguous in the future. Class name for Block should be simple, meaningful and represent with its function or its place in a page. Example : header, navigation, tabs, menu, footer, etc.</p><pre name="1fda" id="1fda" class="graf graf--pre graf-after--p">.header{<br>}</pre><pre name="75e4" id="75e4" class="graf graf--pre graf-after--pre">.navigation{<br>}</pre><pre name="d7dd" id="d7dd" class="graf graf--pre graf-after--pre">.tabs{<br>}</pre><pre name="c43f" id="c43f" class="graf graf--pre graf-after--pre">.menu{<br>}</pre><pre name="6a16" id="6a16" class="graf graf--pre graf-after--pre graf--trailing">.footer{<br>}</pre></div></div></section><section name="4a58" class="section section--body"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="135f" id="135f" class="graf graf--h3 graf--leading">— Element</h3><p name="648c" id="648c" class="graf graf--p graf-after--h3">Element is a child of its block, every part inside block called element. Element has dependent with its parent and cannot stand by itself. Element always inside block parent and has rule to include its parent class name as prefix of class name with adding two underscore (__) as a separation from its block parent.</p><p name="5ad6" id="5ad6" class="graf graf--p graf-after--p">So if you have block parent .header, you may have write your element like this example :</p><pre name="c7de" id="c7de" class="graf graf--pre graf-after--p graf--trailing">.header{<br>}<br>.header__brand{<br>}<br>.header__title{<br>}</pre></div></div></section><section name="1725" class="section section--body"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="0dc9" id="0dc9" class="graf graf--h3 graf--leading">— Modifier</h3><p name="3d4b" id="3d4b" class="graf graf--p graf-after--h3">Modifier is a state that will change behavior or appearance from Block or Element. BEM has rule for modifier with add its element/block as prefix and two dash ( — ) as a separation. Example :</p><pre name="9604" id="9604" class="graf graf--pre graf-after--p graf--trailing">.button{<br>}<br>.button--large{<br>}<br>.button--disabled{<br>}</pre></div></div></section><section name="35b7" class="section section--body"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="6011" id="6011" class="graf graf--h3 graf--leading">BEM Implementation</h3><p name="d4b2" id="d4b2" class="graf graf--p graf-after--h3">After we understand all of simple rule in BEM now we will try to learn how to organize BEM to make our CSS better.</p><p name="f6c2" id="f6c2" class="graf graf--p graf-after--p">BEM’s deadly feature is a vision that a block in BEM should be independent and all the things inside this block should be handled by each block without affecting other block. Understand this vision is easy but to implementing is not easy as that.</p><p name="c967" id="c967" class="graf graf--p graf-after--p">First thing, we should separate file for each block so every block can reduce its change effect to others. To be more discoverable we also should give file name with same like it’s block name. So when we see class .header in html we can fast tracking that class because always placed in header file also with other class in html.</p><p name="74f2" id="74f2" class="graf graf--p graf-after--p">Second thing, we must change our mindset that very usual to reuse class, because in BEM we not reuse class but block and rules. Its looks like the hardest part for every CSS developer. Its very strange for us, we used to using class in any place and any div we want. But lets follow it first and we will decide in the last are we fit and enjoy with this convention or this is will add big effort to us.</p><p name="c9b3" id="c9b3" class="graf graf--p graf-after--p">Third thing, maybe you will need pre-processor helper to implement BEM because will be many confusing thing if you decide using BEM without any pre-processor (*while it’s not impossible).</p><p name="0346" id="0346" class="graf graf--p graf-after--p graf--trailing">Last thing from me when you want implement BEM to your project is make sure all of your team member has same vision and knowledge about this convention. Because BEM is just convention, it’s not giving an error even we not follow its guidance. A commitment from team member to implement better CSS code collaboration is matter. Transfer knowledge for each member to have same understand in BEM way is also matter.</p></div></div></section><section name="548a" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><p name="c27c" id="c27c" class="graf graf--p graf--leading">For further reading about BEM you can found in <a href="http://getbem.com/introduction/" data-href="http://getbem.com/introduction/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">here</a>.</p><p name="b740" id="b740" class="graf graf--p graf-after--p">For myself, BEM is very intrusive in my code nowadays. Almost every my CSS code is built in top of BEM. I also built simple CSS framework that called BEM-Kit using BEM convention, you can fork <a href="https://github.com/mazipan/bem-kit" data-href="https://github.com/mazipan/bem-kit" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank"><strong class="markup--strong markup--p-strong">here</strong></a>.</p><p name="c202" id="c202" class="graf graf--p graf-after--p">Hope this post will help you understand how BEM works to achieve better CSS code.</p><figure name="7d06" id="7d06" class="graf graf--figure graf--iframe graf-after--p"><iframe src="https://www.slideshare.net/slideshow/embed_code/key/glzxlLJ2aRSQgH" width="600" height="500" frameborder="0" scrolling="no"></iframe></figure><blockquote name="0e47" id="0e47" class="graf graf--blockquote graf-after--figure graf--trailing">Wrote with love by <a href="https://medium.com/u/d09eac079a9c" data-href="https://medium.com/u/d09eac079a9c" data-anchor-type="2" data-user-id="d09eac079a9c" data-action-value="d09eac079a9c" data-action="show-user-card" data-action-type="hover" class="markup--user markup--blockquote-user" target="_blank">Irfan Maulana</a></blockquote></div></div></section>
+</section>
+<footer><p class="p-tags">Tagged in <a href="https://medium.com/tag/css" class="p-tag">CSS</a>, <a href="https://medium.com/tag/web-development" class="p-tag">Web Development</a>, <a href="https://medium.com/tag/bem" class="p-tag">Bem</a>, <a href="https://medium.com/tag/front-end-development" class="p-tag">Front End Development</a>, <a href="https://medium.com/tag/bem-css" class="p-tag">Bem Css</a></p><p>By <a href="https://medium.com/@mazipanneh" class="p-author h-card">Irfan Maulana</a> on <a href="https://medium.com/p/e75714b71f2e"><time class="dt-published" datetime="2017-02-07T23:19:51.179Z">February 7, 2017</time></a>.</p><p><a href="https://medium.com/@mazipanneh/redefine-your-css-with-bem-e75714b71f2e" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 8, 2018.</p></footer></article>
+
+</body></html>

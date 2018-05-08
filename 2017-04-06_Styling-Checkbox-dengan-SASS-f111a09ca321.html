@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>Styling Checkbox dengan SASS</title><meta name="description" content="Bila pada tulisan sebelumnya disini kita sudah bahas mengenai sedikit eksperimen kita dalam memberikan Style pada komponen input radio…"><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">Styling Checkbox dengan SASS</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Bila pada tulisan sebelumnya disini kita sudah bahas mengenai sedikit eksperimen kita dalam memberikan Style pada komponen input radio…
+</section>
+<section data-field="body" class="e-content">
+<section name="a32e" class="section section--body section--first section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="029c" id="029c" class="graf graf--h3 graf--leading graf--title">Styling Checkbox dengan SASS</h3><p name="38fe" id="38fe" class="graf graf--p graf--hasDropCapModel graf--hasDropCap graf-after--h3"><span class="graf-dropCap">B</span>ila pada tulisan sebelumnya <a href="https://medium.com/@mazipanneh/sass-untuk-styling-sederhana-radio-1aaef180f62c" data-href="https://medium.com/@mazipanneh/sass-untuk-styling-sederhana-radio-1aaef180f62c" class="markup--anchor markup--p-anchor" target="_blank">disini</a> kita sudah bahas mengenai sedikit eksperimen kita dalam memberikan Style pada komponen input radio, maka kali ini kita akan coba ber-eksperimen lagi dengan komponen lainnya dan saya memilih komponen input dengan type checbox atau kita sebut saja sebagai checkbox. Bosan ? semestinya sih kalau lagi dalam tahap belajar tidak boleh bosan ya, karena <em class="markup--em markup--p-em">learning by doing </em>masih jadi cara yang paling baik buat belajar koding. Jadi ya, sabar ya dan silahkan disimak langkah-langkahnya sebagai berikut :</p><p name="ae3c" id="ae3c" class="graf graf--p graf--hasDropCapModel graf--hasDropCap graf-after--p"><span class="graf-dropCap">P</span>ertama, kita akan siapkan seperti biasa HTML dasar yang nantinya akan kita beri style. Sederhana saja cuma definisikan input dengan type=”checkbox”, kita buat saja 3 varian seperti sebelumnya dengan 1 kita buat sebagai input yang disable atau tidak dapat dipilih oleh pengguna. Berikut kurang lebih kode HTML yang kita buat :</p><figure name="3d82" id="3d82" class="graf graf--figure graf--iframe graf-after--p"><script src="https://gist.github.com/mazipan/bb27779c9ec0774359a94312d8afc806.js"></script></figure><p name="fdf9" id="fdf9" class="graf graf--p graf-after--figure">Bila Anda merasa kurang bisa memahami kode HTML tersebut, maka silahkan baca artikel <a href="http://perjalanan-menjadi-frontend-developer-bagi-pemula-seri-1-mengenal-html" data-href="http://perjalanan-menjadi-frontend-developer-bagi-pemula-seri-1-mengenal-html" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Perjalanan menjadi Frontend Developer bagi pemula Seri-1 Mengenal HTML</a> terlebih dahulu ya :-).</p><p name="7903" id="7903" class="graf graf--p graf--hasDropCapModel graf--hasDropCap graf-after--p"><span class="graf-dropCap">K</span>edua kita akan siapkan class .checkbox yang akan kita beri style menggunakan SASS, kita akan memberi style pada label kemudian <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">:before</em></strong><em class="markup--em markup--p-em"> </em>dan <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">:after</em></strong> dari label tersebut. <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">:before</em></strong> akan kita gunakan sebagai kotak sebelum checkbox tersebut dipilih, dan <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">:after</em></strong> akan kita gunakan sebagai tanda bahwa checkbox tersebut dalam keadaan terpilih oleh pengguna. Karena kita akan inisialisasi dalam keadaan state yang belum di definisikan maka kita buat saja <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">:after</em></strong> dalam keadaan tidak terlebih dahulu, dalam hal ini kita set width:0 dan height:0, berikut kurang lebih kode yang telah kita buat untuk membuat checbox yang berada dalam keadaaan tidak terpilih sama sekali :</p><figure name="8ac8" id="8ac8" class="graf graf--figure graf--iframe graf-after--p"><script src="https://gist.github.com/mazipan/e849ef381c0ade0244c3c93a80a794df.js"></script></figure><p name="1bc0" id="1bc0" class="graf graf--p graf--hasDropCapModel graf--hasDropCap graf-after--figure"><span class="graf-dropCap">S</span>etelahnya kita akan mendefinisikan saat checkbox yang kita buat dalam keadaan terpilih yang artinya kita mesti membuat <strong class="markup--strong markup--p-strong"><em class="markup--em markup--p-em">:after</em></strong> dari label kita memiliki warna background seperti variable <em class="markup--em markup--p-em">$theme</em> yang sudah kita buat dan juga memiliki tanda <em class="markup--em markup--p-em">tick-mark</em> atau <em class="markup--em markup--p-em">contreng </em>yang menunjukkan bahwa sedang terpilih. Kita bisa saja menggunakan image sebaga background-image untuk membuat <em class="markup--em markup--p-em">tick-mark</em> tersebut, tapi saya lebih memilih membuat manual menggunakan SASS dengan memodifikasi border dan rotate, berikut kurang lebih kode yang kita buat untuk membuat checkbox dalam keadaan terpilih :</p><figure name="d250" id="d250" class="graf graf--figure graf--iframe graf-after--p"><script src="https://gist.github.com/mazipan/90d1aa07bda87ac435108820644b2209.js"></script></figure><p name="a200" id="a200" class="graf graf--p graf--hasDropCapModel graf--hasDropCap graf-after--figure"><span class="graf-dropCap">T</span>erakhir kita akan buat satu state lagi yakni ketika checkbox tersebut dalam keadaan disable atau tidak dapat dipilih oleh pengguna, karena secara UI pengguna juga mesti sadar bahwa satu input memang dalam keadaan yang tidak dapat dia pilih. Untuk ini kita akan memberi background-color abu-abu agar terkesan greyscale dan memberikan border abu-abu dengan palllete 1 tingkat lebih gelap diatasnya. berikut kurang lebih kode yang kita buat :</p><figure name="3fcb" id="3fcb" class="graf graf--figure graf--iframe graf-after--p"><script src="https://gist.github.com/mazipan/7e5d072ab3112461de40b0ebd0db00ad.js"></script></figure><p name="4ca6" id="4ca6" class="graf graf--p graf-after--figure">Checkbox tersebut akan menghasilkan tampilan yang seperti gambar berikut ini :</p><figure name="260d" id="260d" class="graf graf--figure graf-after--p"><div class="aspectRatioPlaceholder is-locked" style="max-width: 397px; max-height: 36px;"><div class="aspectRatioPlaceholder-fill" style="padding-bottom: 9.1%;"></div><img class="graf-image" data-image-id="1*jnGnWowxbghHD_DZSOuVaQ.png" data-width="397" data-height="36" src="https://cdn-images-1.medium.com/max/800/1*jnGnWowxbghHD_DZSOuVaQ.png"></div><figcaption class="imageCaption">checkbox yang kita buat ini</figcaption></figure><p name="217d" id="217d" class="graf graf--p graf-after--figure">Jadi bila kita ingin menyatukan kode SASS kita kedalam satu file maka akan tampak kode yang kurang lebih seperti berikut :</p><figure name="e319" id="e319" class="graf graf--figure graf--iframe graf-after--p"><script src="https://gist.github.com/mazipan/7d62010ec91a4d443e04da85aaaa46a8.js"></script></figure><p name="2706" id="2706" class="graf graf--p graf-after--figure">Demikian panduan sederhana dalam memberikan style pada checkbox yang dipadukan dengan kekuatan SASS, bila Anda ingin kesulitan memahami syntax SASS diatas mungkin Anda perlu membaca artikel <a href="https://mazipanneh.com/blog/2017/04/mengenal-dan-belajar-sass-sebagai-css-pre-processor/" data-href="https://mazipanneh.com/blog/2017/04/mengenal-dan-belajar-sass-sebagai-css-pre-processor/" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">ini</a> terlebih dahulu. Anda juga bisa melihat Live preview dari kode diatas <a href="https://codepen.io/mazipan/pen/PpxBdK" data-href="https://codepen.io/mazipan/pen/PpxBdK" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">disini</a>.</p><p name="7a13" id="7a13" class="graf graf--p graf-after--p">Semoga bermanfaat bagi mereka yang masih belajar ya :-).</p><p name="e062" id="e062" class="graf graf--p graf-after--p">Salam</p><p name="f9fe" id="f9fe" class="graf graf--p graf-after--p graf--trailing">Ditulih oleh <a href="https://medium.com/u/d09eac079a9c" data-href="https://medium.com/u/d09eac079a9c" data-anchor-type="2" data-user-id="d09eac079a9c" data-action-value="d09eac079a9c" data-action="show-user-card" data-action-type="hover" class="markup--user markup--p-user" target="_blank">Irfan Maulana</a> di siang hari jam makan siang saat itu.</p></div></div></section>
+</section>
+<footer><p class="p-tags">Tagged in <a href="https://medium.com/tag/sass" class="p-tag">Sass</a>, <a href="https://medium.com/tag/css" class="p-tag">CSS</a>, <a href="https://medium.com/tag/programming" class="p-tag">Programming</a>, <a href="https://medium.com/tag/web-development" class="p-tag">Web Development</a>, <a href="https://medium.com/tag/tutorial" class="p-tag">Tutorial</a></p><p>By <a href="https://medium.com/@mazipanneh" class="p-author h-card">Irfan Maulana</a> on <a href="https://medium.com/p/f111a09ca321"><time class="dt-published" datetime="2017-04-06T05:51:50.200Z">April 6, 2017</time></a>.</p><p><a href="https://medium.com/@mazipanneh/styling-checkbox-dengan-sass-f111a09ca321" class="p-canonical">Canonical link</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 8, 2018.</p></footer></article>
+
+</body></html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>SASS + BEM for Better CSS Development</title><meta name="description" content="Intro"><style>
+      * {
+        font-family: Georgia, Cambria, "Times New Roman", Times, serif;
+      }
+      html, body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        font-size: 50px;
+        margin-bottom: 17px;
+        color: #333;
+      }
+      h2 {
+        font-size: 24px;
+        line-height: 1.6;
+        margin: 30px 0 0 0;
+        margin-bottom: 18px;
+        margin-top: 33px;
+        color: #333;
+      }
+      h3 {
+        font-size: 30px;
+        margin: 10px 0 20px 0;
+        color: #333;
+      }
+      header {
+        width: 640px;
+        margin: auto;
+      }
+      section {
+        width: 640px;
+        margin: auto;
+      }
+      section p {
+        margin-bottom: 27px;
+        font-size: 20px;
+        line-height: 1.6;
+        color: #333;
+      }
+      section img {
+        max-width: 640px;
+      }
+      footer {
+        padding: 0 20px;
+        margin: 50px 0;
+        text-align: center;
+        font-size: 12px;
+      }
+      .aspectRatioPlaceholder {
+        max-width: auto !important;
+        max-height: auto !important;
+      }
+      .aspectRatioPlaceholder-fill {
+        padding-bottom: 0 !important;
+      }
+      header,
+      section[data-field=subtitle] {
+        display: none;
+      }
+      </style></head><body><article class="h-entry">
+<header>
+<h1 class="p-name">SASS + BEM for Better CSS Development</h1>
+</header>
+<section data-field="subtitle" class="p-summary">
+Intro
+</section>
+<section data-field="body" class="e-content">
+<section name="e519" class="section section--body section--first"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="0e09" id="0e09" class="graf graf--h3 graf--leading graf--title">SASS + BEM for Better CSS Development</h3><h3 name="8ff9" id="8ff9" class="graf graf--h3 graf-after--h3">Intro</h3><p name="37ea" id="37ea" class="graf graf--p graf-after--h3">Yes I am Frontend developer, my daily job is about building a block of HTML then adding CSS code for more humanity and fill with JavaScript.</p><p name="4e5a" id="4e5a" class="graf graf--p graf-after--p">I have code frontend at least from 2013 and I was an orthodox frontend that never know any tools for supporting and helping finish my job easier. I just know HTML, CSS and JavaScript, That’s it.</p><blockquote name="5907" id="5907" class="graf graf--blockquote graf-after--p">But everything was changed after fire nation attacked.</blockquote><p name="5626" id="5626" class="graf graf--p graf-after--blockquote graf--trailing">Building websites nowadays is not enough if you’re only using HTML, CSS and JavaScript although the browser until today was only know those. And as a developer, we should facing the changing as a challenge. When we think our existing solution is not valid again then maybe we should looking for another solution. </p></div></div></section><section name="07e1" class="section section--body"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="774a" id="774a" class="graf graf--h3 graf--leading">Why Using SASS ?</h3><p name="7e55" id="7e55" class="graf graf--p graf-after--h3">In case of CSS development changing, now almost of existing frontend developer have use <em class="markup--em markup--p-em">pre-processor</em> to help in CSS development. So do I, first I trying to compare existing pre-processor in the market that more fit with my style and needed. I found <a href="http://lesscss.org" data-href="http://lesscss.org" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">LESS</a>, <a href="http://stylus-lang.com" data-href="http://stylus-lang.com" class="markup--anchor markup--p-anchor" rel="noopener" target="_blank">Stylus</a>, and SASS as a good candidate at that time. LESS and Stylus could be the winner because they run in Nodejs engine, SASS basically run in Ruby Engine and It’s too much for frontend developer should have many engine for its development. But unfortunately SASS also have extended library called libsass that translated into many language, one of them is Nodejs. So, all of them now is side by side.</p><p name="1579" id="1579" class="graf graf--p graf-after--p">Let see into its syntax, Stylus has syntax that hard to learn, especially in tabulation sensitive usage. SASS have two different syntax called native SASS and SCSS syntax. SCSS syntax is same with native CSS syntax, very ease to learn for poor frontend developer like me. In syntax I think SASS and Less become winner for me because it’s simple learning curve.</p><p name="0e88" id="0e88" class="graf graf--p graf-after--p">SASS also more mature for pre-processor than its competitor with 9 year experience in market. </p><p name="9bd0" id="9bd0" class="graf graf--p graf-after--p graf--trailing">So far I decide to choose SASS as my pre-processor, this is a subjective opinion you may have different result with different reason.</p></div></div></section><section name="1c2d" class="section section--body"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="2ab7" id="2ab7" class="graf graf--h3 graf--leading">SASS Implementation</h3><p name="79af" id="79af" class="graf graf--p graf-after--h3">SASS like another pre-processor is just tools for helping Us in development phase, but for getting the good of pre-processor we still need to decide what best structure and standard that fit with your needed.</p><p name="3a8b" id="3a8b" class="graf graf--p graf-after--p">In first implementation I only seperate folder into mixin and fundamental, all file that represents to each pages is outside this two folder. I haven’t implemented any SASS syntax, I only use import for cut file into small piece and mixin to vendor prefix definitions.</p><p name="d954" id="d954" class="graf graf--p graf-after--p graf--trailing">I found that SASS is helping, but need more deep learning to feel more the SASS effect. Then I start to learn more about SASS syntax that will help me more in development.</p></div></div></section><section name="10f0" class="section section--body"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="17e4" id="17e4" class="graf graf--h3 graf--leading">BEM Convention</h3><p name="7868" id="7868" class="graf graf--p graf-after--h3">As I said above that SASS is great tool but it’s just a tool, I need more standard that make my CSS code easier to be managed, more modular, easier to be tracked. </p><p name="a30c" id="a30c" class="graf graf--p graf-after--p">And BEM coming to solve all of those.</p><p name="ddc9" id="ddc9" class="graf graf--p graf-after--p">BEM unlike SASS that is tool for helping CSS development, BEM is just standard for class naming, So with BEM you will have standard in your CSS classname.</p><p name="22ef" id="22ef" class="graf graf--p graf-after--p"><em class="markup--em markup--p-em">Why BEM standards helping me?</em></p><p name="308f" id="308f" class="graf graf--p graf-after--p">BEM is stand for Block, Element, Modifier. BEM change our habit in code CSS, if we use to code class name that reuse everywhere BEM won’t do that thing. BEM see all the thing as Block (*or you can see as component if you familiar with React), so if you want reuse anything you must reuse that Block not any little part of that.</p><p name="1db7" id="1db7" class="graf graf--p graf-after--p graf--trailing">BEM helping in manage my structure to be more modular, every BEM block now stand for single file SCSS that can reuse. BEM also make my code more trackable, because all class that show in HTML is always relevant with your filename. You can guess what file is it from class name in HTML with ease.</p></div></div></section><section name="3706" class="section section--body section--last"><div class="section-divider"><hr class="section-divider"></div><div class="section-content"><div class="section-inner sectionLayout--insetColumn"><h3 name="1415" id="1415" class="graf graf--h3 graf--leading">Conclusion</h3><p name="0813" id="0813" class="graf graf--p graf-after--h3">SASS + BEM is my favorite combination for me to developing CSS, it’s maybe not the best solution for you. But I hope you can get the big picture. You can choose any tools combination for helping you. There’s so much great combination that you can choose out there. Maybe you can look for Less + OOCSS ?</p><blockquote name="4db4" id="4db4" class="graf graf--blockquote graf-after--p">Wrote with love by <a href="https://medium.com/u/d09eac079a9c" data-href="https://medium.com/u/d09eac079a9c" data-anchor-type="2" data-user-id="d09eac079a9c" data-action-value="d09eac079a9c" data-action="show-user-card" data-action-type="hover" class="markup--user markup--blockquote-user" target="_blank">Irfan Maulana</a> </blockquote><p name="5862" id="5862" class="graf graf--p graf--empty graf-after--blockquote graf--trailing"><br></p></div></div></section>
+</section>
+<footer><p><a href="https://medium.com/p/7a095ebe348">View original.</a></p><p>Exported from <a href="https://medium.com">Medium</a> on May 8, 2018.</p></footer></article>
+
+</body></html>
